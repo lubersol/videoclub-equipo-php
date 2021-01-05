@@ -5,18 +5,23 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
 
 class User extends Authenticatable
 {
+    use HasFactory;
     use Notifiable;
-
+    public function rent (){
+        return $this->belongsToMany(Rent::class,'rents');
+    }
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role',
     ];
 
     /**
