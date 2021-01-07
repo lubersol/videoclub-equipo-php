@@ -19,13 +19,16 @@ API REST desarrollada para nutrir las vistas de Films SKL (API creada con React)
 
 ## 3 - Diagrama tablas BBDD :globe_with_meridians:
 
+![Screenshot](public/Captura.png)
+
 ## 4 - Rutas con Postman :earth_americas:
 
 * Users: 
-post: localhost:8000/api/rent (crear usuario nuevo).
+post: localhost:8000/api/user (crear usuario nuevo).
+* Alquiler: 
+post: localhost:8000/api/rent (crear alquiler nuevo).
 
 
-## 5 - Enlace a Heroku :zap:
 
 
 
