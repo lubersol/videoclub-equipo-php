@@ -19,7 +19,7 @@ API REST desarrollada para nutrir las vistas de Films SKL (API creada con React)
 
 ## 3 - Diagrama tablas BBDD :globe_with_meridians:
 
-![Screenshot](public/Captura.png)
+![Screenshot](public/diagrama.png)
 
 ## 4 - Rutas con Postman :earth_americas:
 
