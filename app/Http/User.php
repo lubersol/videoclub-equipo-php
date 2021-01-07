@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Http;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -10,11 +10,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class User extends Authenticatable
 {
-    use HasFactory;
-    use Notifiable;
-    public function rent (){
-        return $this->belongsToMany(Rent::class,'rents');
-    }
+    // use HasFactory, Notifiable;
+    
     /**
      * The attributes that are mass assignable.
      *
@@ -41,4 +38,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function rent (){
+        return $this->belongsToMany(Rent::class,'rents');
+    }
+
 }
