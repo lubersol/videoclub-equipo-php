@@ -1,13 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Rent extends Model
 {
-    use HasFactory;
+    //use HasFactory;
     
     public function user (){
         return $this->belongsToMany(User::class,'users');
