@@ -16,6 +16,11 @@ class Rent extends Migration
         Schema::create('rents', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->unsignedBigInteger('userId');
+            $table->foreign('userId')->references('id')->on('users');
+            $table->string('title')->unique();
+            $table->string('createdAt');
+            $table->string('returnDate');
         });
     }
 
