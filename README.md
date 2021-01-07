@@ -1,6 +1,6 @@
 # API Movies 
 
-![Screenshot](proyector.gif)
+![Screenshot](public/proyector.gif)
 
 ## 1 - Introducción:
 
